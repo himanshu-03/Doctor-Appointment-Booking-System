@@ -140,7 +140,7 @@
             </tr>
             <tr>
                 <td class="label-td">
-                    <input type="email" name="useremail" class="input-text" placeholder="Email Address" required>
+                    <input type="email"  pattern="[^ @]*@[^ @]*" name="useremail" class="input-text" placeholder="Email Address" required>
                 </td>
             </tr>
             <tr>
@@ -151,7 +151,7 @@
 
             <tr>
                 <td class="label-td">
-                    <input type="Password" name="userpassword" class="input-text" placeholder="Password" required>
+                    <input type="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="userpassword" class="input-text" placeholder="Password" required>
                 </td>
             </tr>
 
