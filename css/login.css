@@ -1,14 +1,19 @@
 
 body{
     margin: 7%;
-    background-color: #F6F7FA;
+    background-image: url(../img/bg02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    
 }
 
 
 
 .container{
     width: 45%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid rgb(235, 235, 235);
     border-radius: 8px;
     margin: 0;
@@ -43,7 +48,10 @@ td{
     text-align: left;
     padding-top: 10px;
 }
-
+.label-td-1{
+    text-align: right;
+    padding-top: 10px;
+}
 .hover-link1{
     font-weight: bold;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/animations.css">  
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     <title>Login</title>
 
@@ -127,13 +128,26 @@
                     <label for="userpassword" class="form-label">Password: </label>
                 </td>
             </tr>
-
             <tr>
                 <td class="label-td">
-                    <input type="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="userpassword" class="input-text" placeholder="Password" required>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="userpassword" class="input-text" id="pass" placeholder="Password" required>
                 </td>
             </tr>
-
+            <tr>
+                <td class="label-td-1">
+                    <input type="checkbox" onclick="myFunction()" class="header-text">Show Password
+                </td>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("pass");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+            </tr>
 
             <tr>
                 <td><br>
